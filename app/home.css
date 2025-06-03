@@ -1,0 +1,633 @@
+/* Updated sections CSS - Add this to your existing styles */
+
+/* White background container starting from Shop by Category */
+.white-section-container {
+  background-color: #ffffff;
+  padding-top: 4rem;
+  margin-top: 2rem;
+}
+
+/* Updated Shop by Category Section */
+.shop-by-category-section {
+  background-color: #ffffff;
+  padding: 4rem 0;
+}
+
+.shop-by-category-title {
+  font-family: 'SF Pro Display';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 3rem;
+}
+
+.timmer-button{
+width: 275px;
+height: 39px;
+border-radius: 20px;
+padding-top: 5px;
+padding-right: 20px;
+padding-bottom: 5px;
+padding-left: 20px;
+gap: 20px;
+background: rgba(255, 0, 0, 0.1);
+font-family: SF Pro Display;
+font-weight: 500;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(0, 0, 0, 1);
+
+}
+
+.cl-icon{
+    margin-left: -15px;
+    margin-right: 10px;
+    margin-top: -1px;
+}
+
+.category-grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f3926280, #f39262b3);
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(243, 146, 98, 0.2);
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.category-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.category-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  transition: border-color 0.3s ease;
+}
+
+.category-item:hover img {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.category-label {
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Updated Daily Deals Section */
+.daily-deals-section {
+  background-color: #ffffff;
+  padding: 5rem 0;
+}
+
+.deals-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.deals-title {
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.deals-timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.timer-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.deals-timer {
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ef4444;
+}
+
+.deals-grid-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+}
+
+.deal-card {
+  background: #ffffff;
+  border-radius: 16px;
+  width: 258.46px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.deal-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.deal-image-container {
+  position: relative;
+  width: 100%;
+  height: 235px;
+  overflow: hidden;
+  width:  280px;
+border-radius: 10.77px;
+border-width: 1.08px;
+gap: 18.54px;
+padding: 4.77px;
+
+}
+
+.deal-image {
+  width: 100%;
+  height: 100%;
+  width: 224px;
+height: 220px;
+border-radius: 8.62px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.deal-card:hover .deal-image {
+  transform: scale(1.05);
+}
+
+.best-seller-badge {
+  position: absolute;
+  top: -2px;
+  right: 35px;
+  background: rgba(246, 222, 123, 1);
+  color: black;
+  border-radius: 20px;
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: 110px;
+  height: 22px;
+  padding: 9px 15px 4px 15px; /* Increased top padding, reduced bottom */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-top-right-radius: 66px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 1px;
+  z-index: 10;
+   text-indent: -30px;
+}
+
+.deal-content {
+  padding: 1.5rem;
+}
+
+.deal-title {
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 500;
+  font-size: 11.00px;
+  line-height: 100%;
+  color:  rgba(0, 0, 0, 1);
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 40px;
+  margin-top: -20px;
+  margin-bottom: -8px;
+  
+}
+
+.short-btn{
+width: 150px;
+height: 25px;
+
+}
+
+.stock-btn{
+width: 71px;
+height: 25px;
+border-radius: 5.38px;
+padding-top: 2.15px;
+padding-right: 5.38px;
+padding-bottom: 2.15px;
+padding-left: 5.38px;
+gap: 10.77px;
+background: rgba(27, 153, 0, 1);
+font-family: SF Pro Display;
+font-weight: 500;
+font-size: 12.23px;
+line-height: 100%;
+letter-spacing: 0%;
+color:  rgba(255, 255, 255, 1);
+}
+
+.tech-btn{
+width: 92px;
+height: 25px;
+border-radius: 5.38px;
+padding-top: 2.15px;
+padding-right: 5.38px;
+padding-bottom: 2.15px;
+padding-left: 5.38px;
+gap: 10.77px;
+background: rgba(0, 0, 0, 1);
+font-family: SF Pro Display;
+font-weight: 500;
+font-size: 12.23px;
+line-height: 100%;
+letter-spacing: 0%;
+color:rgba(255, 255, 255, 1);
+ 
+
+}
+
+.deal-prices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+  margin-top: 10px;
+}
+
+.deal-original-price {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 12px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.deal-sale-price {
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ef4444;
+}
+
+.deal-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 12px;
+  margin-bottom: -12px;
+}
+
+.rating-stars {
+  display: flex;
+  gap: 1px;
+  
+}
+
+.star {
+  color: #e5e5e5;
+  font-size: 14px;
+}
+
+.star.filled {
+  color: #fbbf24;
+}
+
+.rating-text {
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 600;
+  color: #333;
+}
+
+.reviews-text {
+  font-family: 'SF Pro Display', sans-serif;
+  color: #666;
+}
+
+/* Top Sellers Section - Similar to Daily Deals */
+.top-sellers-section {
+  background-color: #ffffff;
+  padding: 5rem 0;
+}
+
+/* Updated white-container class for full page width */
+.white-container {
+  background-color: #ffffff;
+  width: 100vw; /* Full viewport width */
+  margin-left: calc(-50vw + 50%); /* Centers content while extending to full width */
+  padding-left: calc(50vw - 50%); /* Restores normal content padding */
+  padding-right: calc(50vw - 50%); /* Restores normal content padding */
+  padding-top: 10px;
+  padding-bottom: 55px;
+  box-sizing: border-box;
+}
+
+/* Alternative approach - simpler but may need parent container adjustments */
+.white-container-alt {
+  background-color: #ffffff;
+  width: 100%;
+  min-width: 100vw;
+  margin: 0;
+  padding: 10px 0;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+/* If you need content inside to be constrained to normal width */
+.white-container .container-content {
+  max-width: 1200px; /* or your desired max-width */
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+
+/* Updated Footer Section */
+.footer-section {
+  background: rgba(255, 245, 218, 1);
+  color: #ffffff;
+  padding: 4rem 0 2rem 0;
+  margin-top: -50px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  margin-top: -60px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-logo {
+  font-family: 'Roboto Serif', serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: var(--Black, rgba(0, 0, 0, 1));
+  margin-bottom: 1rem;
+}
+
+.footer-description {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 24px;
+  line-height: 100%;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+  max-width: 800px;
+  white-space: nowrap; /* Prevents text from wrapping to next line */
+  overflow: hidden; /* Hides any text that overflows */
+  text-overflow: ellipsis; /* Shows "..." if text is too long */
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  background: white;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.newsletter-input::placeholder {
+  color: #888;
+}
+
+.newsletter-button {
+  padding: 12px 24px;
+  background: var(--S-100, rgba(243, 141, 98, 1));
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.newsletter-button:hover {
+  transform: translateY(-2px);
+}
+
+.privacy-text {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color:rgba(0, 0, 0, 0.6);
+  line-height: 100%;
+}
+
+.footer-copyright {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #666;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #404040;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-links-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+}
+
+.footer-column-title {
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 1rem;
+}
+
+.footer-column{
+  margin-right: 10px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 4 columns */
+  grid-template-rows: repeat(4, 1fr); /* 2 rows */
+  gap: 2.0rem 2.5rem; /* row gap, column gap */
+  
+}
+
+.footer-links li {
+  margin-bottom: 0;
+}
+
+.footer-links a {
+font-family: SF Pro Display;
+font-weight: 400;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+  color:  rgba(0, 0, 0, 0.6);
+  transition: color 0.3s ease;
+  white-space: nowrap;
+  
+}
+
+.footer-links a:hover {
+  color: #f39262;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: #cccccc;
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  color: #f39262;
+  background: rgba(243, 146, 98, 0.1);
+}
+
+.social-link img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .deals-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 968px) {
+  .category-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .deals-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .deals-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .footer-links-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .shop-by-category-title,
+  .deals-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .deals-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .shop-by-category-title,
+  .deals-title {
+    font-size: 28px;
+  }
+}
